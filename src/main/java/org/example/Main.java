@@ -10,7 +10,7 @@ public class Main {
     double firstInputNumber = 0;
 
     // 1番目の数を設定する
-    for (; ; ) {
+    while (true) {
       try {
         System.out.println("1番目の数字を入力してください");
         firstInputNumber = scanner.nextDouble();
@@ -25,7 +25,7 @@ public class Main {
     // 演算子を設定する
     String operator = "";
 
-    for (; ; ) {
+    while (true) {
       System.out.println("演算子を入力してください(+, -, *, /)");
       operator = scanner.next();
       if (operator.equals("+") || operator.equals("-") || operator.equals("*") || operator.equals(
@@ -39,7 +39,7 @@ public class Main {
     // 2番目の数を設定する
 
     double secondInputNumber = 0;
-    for (; ; ) {
+    while (true) {
       try {
         System.out.println("2番目の数字を入力してください");
         secondInputNumber = scanner.nextDouble();
