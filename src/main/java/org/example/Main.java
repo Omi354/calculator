@@ -43,7 +43,11 @@ public class Main {
       try {
         System.out.println("2番目の数字を入力してください");
         secondInputNumber = scanner.nextDouble();
-        break;
+        if (operator.equals("/") && secondInputNumber == 0) {
+          System.out.println("0で割ることはできません。再度2番目の数字を入力してください");
+        } else {
+          break;
+        }
       } catch (InputMismatchException e) {
         e.printStackTrace();
         System.out.println("数字のみ入力可能です");
